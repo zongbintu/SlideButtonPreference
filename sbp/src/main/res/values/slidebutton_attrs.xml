@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SlideButtonPreference">
+        <attr name="background_off" format="reference" />
+        <attr name="slidebar" format="reference" />
+        <attr name="background_on" format="reference" />
+        <attr name="on" format="boolean"/>
+        <attr name="key" format="string"/>
+    </declare-styleable>
+
+</resources>
