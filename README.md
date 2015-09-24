@@ -1,8 +1,10 @@
 # SlideButtonPreference
 SlideButtonPreference init
 
+滑动开关，记录开关状态
+
 两种效果，一种是像IPHONE开和关是两咱颜色的滑动，一种是开关背景相同，只是slidebar的位置不同
-交易图
+效果图
 ![](https://github.com/2Tu/SlideButtonPreference/blob/master/screenshots/SlideButtonPreference.gif)
 
     <com.tu.preference.SlideButtonPreference
