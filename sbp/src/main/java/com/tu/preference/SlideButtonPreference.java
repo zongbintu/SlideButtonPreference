@@ -46,11 +46,11 @@ public class SlideButtonPreference extends View implements View.OnClickListener 
     private void initView(TypedArray typedArray) {
         int backgroundId = typedArray.getResourceId(
                 R.styleable.SlideButtonPreference_background_off, 0);
-        int slidebarId = typedArray.getResourceId(
+        int slideBarId = typedArray.getResourceId(
                 R.styleable.SlideButtonPreference_slidebar, 0);
         int onBackgroundId = typedArray.getResourceId(
                 R.styleable.SlideButtonPreference_background_on, 0);
-        if (0 == backgroundId || 0 == slidebarId) {
+        if (0 == backgroundId || 0 == slideBarId) {
             throw new IllegalArgumentException("background_off slidebar must be set");
         }
         Resources resources = getResources();
@@ -63,7 +63,7 @@ public class SlideButtonPreference extends View implements View.OnClickListener 
         if (TextUtils.isEmpty(key))
             key = SlideButtonPreference.class.getName()+getId();
         mBgOffBitmap = BitmapFactory.decodeResource(resources, backgroundId);
-        mSlideBitmap = BitmapFactory.decodeResource(resources, slidebarId);
+        mSlideBitmap = BitmapFactory.decodeResource(resources, slideBarId);
         isOn = typedArray.getBoolean(R.styleable.SlideButtonPreference_on, false);
         SharedPreferences preferences = getContext().getSharedPreferences(SlideButtonPreference.class.getName(), Context.MODE_PRIVATE);
         isOn = preferences.getBoolean(key, isOn);
